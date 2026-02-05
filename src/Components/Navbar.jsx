@@ -1,7 +1,7 @@
 // creating the nav bar 
 
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import luckyLogo from '../assets/lucky_logo.jpg'
 
 const Navbar = () => {
@@ -18,10 +18,10 @@ const Navbar = () => {
 
   {/* Desktop Navigation */}
   <ul className="hidden md:flex list-none m-0 p-0 gap-4 lg:gap-6 mx-auto items-center">
-    <li><Link to="/" className="text-gray-600 no-underline py-2 px-0 font-medium relative transition-colors duration-300 hover:text-blue-500 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-1/2 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">Home</Link></li>
-    <li><Link to="/products" className="text-gray-600 no-underline py-2 px-0 font-medium relative transition-colors duration-300 hover:text-blue-500 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-1/2 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">Products</Link></li>
-    <li><Link to="/about" className="text-gray-600 no-underline py-2 px-0 font-medium relative transition-colors duration-300 hover:text-blue-500 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-1/2 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">About</Link></li>
-    <li><Link to="/Contact" className="text-gray-600 no-underline py-2 px-0 font-medium relative transition-colors duration-300 hover:text-blue-500 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-1/2 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">Contact</Link></li>
+    <li><NavLink to="/" className="text-gray-600 no-underline py-2 px-0 font-medium relative transition-colors duration-300 hover:text-blue-500 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-1/2 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">Home</NavLink></li>
+    <li><NavLink to="/products" className="text-gray-600 no-underline py-2 px-0 font-medium relative transition-colors duration-300 hover:text-blue-500 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-1/2 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">Products</NavLink></li>
+    <li><NavLink to="/about" className="text-gray-600 no-underline py-2 px-0 font-medium relative transition-colors duration-300 hover:text-blue-500 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-1/2 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">About</NavLink></li>
+    <li><NavLink to="/Contact" className="text-gray-600 no-underline py-2 px-0 font-medium relative transition-colors duration-300 hover:text-blue-500 after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-1/2 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full hover:after:left-0">Contact</NavLink></li>
     <li className="ml-2 lg:ml-4">
       <div className="relative">
         <input
