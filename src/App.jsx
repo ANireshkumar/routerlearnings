@@ -6,6 +6,7 @@ import Products from "./Pages/Products"
 import Login from "./Pages/Login"
 import About from "./Pages/About"
 import RootLayout from "./Layout/RootLayout"
+import Register from "./Pages/Register"
 
 
 const App = () => {
@@ -16,6 +17,9 @@ const router = createBrowserRouter(createRoutesFromElements((
     <Route path="Contact" element={<Contact />} />
     <Route path="products" element={<Products />} />
     <Route path="about" element={<About />} />  
+    <Route path="/login" element={<Login />} />
+    <Route path="/register" element={<Register />} />
+      
   </Route>
   )));
 
