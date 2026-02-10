@@ -13,6 +13,8 @@ const ProductCard = ({ products, onAddToCart }) => {
             <img
               src={product.image}
               alt={product.name}
+              loading="lazy"
+              decoding="async"
               className="h-full object-contain p-6 transition-transform duration-500 group-hover:scale-105"
             />
 
